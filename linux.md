@@ -18,7 +18,7 @@ To create users in a Linux system, assign permissions, manage processes, automat
 ### ➤ Create a User
 
 ```bash
-sudo useradd -m user1
+sudo useradd user1
 ```
 
 ### ➤ Set Password
