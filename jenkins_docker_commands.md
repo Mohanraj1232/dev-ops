@@ -3,23 +3,16 @@
 ## 1️⃣ Pull Jenkins Image
 
 ``` bash
-docker pull jenkins/jenkins:lts
+docker pull jenkins/jenkins
 ```
 
-------------------------------------------------------------------------
-
-## 2️⃣ Create Docker Volume (Recommended for Data Persistence)
-
-``` bash
-docker volume create jenkins_home
-```
 
 ------------------------------------------------------------------------
 
 ## 3️⃣ Run Jenkins Container
 
 ``` bash
-docker run -d   -p 8080:8080   -p 50000:50000   -v jenkins_home:/var/jenkins_home   --name jenkins   jenkins/jenkins:lts
+docker run -d   -p 8080:8080   -p 50000:50000   --name jenkins   jenkins/jenkins
 ```
 
 ------------------------------------------------------------------------
